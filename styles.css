@@ -39,3 +39,47 @@ html {
     scroll-behavior: smooth;
 }
   
+body {
+    font-family: Raleway, sans-serif;
+    font-size: var(--para);
+    background-color: var(--backgound-clr); 
+    color: var(--para-clr); 
+}
+  
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--backgound-clr);
+  }
+  
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+  
+ul {
+    list-style: none;
+}
+  
+.nav-list a:hover {
+    cursor: pointer;
+    color: var(--para-clr-desaturated);
+}
+  
+a {
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+    color: var(--para-clr);
+}
+  
+.nav-list a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+  
