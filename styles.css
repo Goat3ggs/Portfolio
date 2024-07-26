@@ -1,0 +1,41 @@
+:root {
+    /* Font-size: */
+    --headings: 5rem;
+    --sub-headings: 3rem;
+    --para: 1.5rem;
+    --big-para: 2.5rem;
+  
+    /* Font-weight: */
+    --fw-regular: 400;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-black: 900;
+  
+    /* colors */
+    --backgound-clr: #fbf2ea;
+    --para-clr: #002147;
+    --para-clr-desaturated: #636983;
+  
+    /* border-radius */
+    --border-radius: 0.8rem;
+  
+}
+  
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+  
