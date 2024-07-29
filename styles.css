@@ -2,8 +2,10 @@
     /* Font-size: */
     --headings: 5rem;
     --sub-headings: 3rem;
-    --para: 1.5rem;
+    --ws-info-only: 2rem;
+    --biger-para: 3rem;
     --big-para: 2.5rem;
+    --para: 1.5rem;
   
     /* Font-weight: */
     --fw-regular: 400;
@@ -13,7 +15,9 @@
   
     /* colors */
     --backgound-clr: #fbf2ea;
+    --contact-clr: #dfcfc1;
     --para-clr: #002147;
+    --footer-clr: #082f5a;
     --para-clr-desaturated: #636983;
   
     /* border-radius */
@@ -91,24 +95,36 @@ a {
     justify-content: center;
     align-items: center;
 }
-  
-.auth-name {
-    font-size: var(--headings);
+
+.auth-name, .ws-info, .contact-section-header {
     color: transparent;
-    background: #666666;
+    background: #3b2525;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     text-shadow: 0px 3px 3px rgba(251, 242, 234,0.6);
+} 
+
+.auth-name {
+    font-size: var(--headings);
+    line-height: 1;
+}
+
+.ws-info {
+    font-size: var(--ws-info-only);
+
 }
   
 .projects-section {
-    padding: 5rem 2rem;
+    padding: 5rem 3rem;
+    margin-bottom: 10rem;
+    text-align: center;
 }
   
 .pj-header {
     margin-bottom: 6rem;
-    font-size: var(--big-para);
+    font-size: var(--sub-headings);
+    text-align: center;
 }
   
 .projects-grid {
@@ -119,7 +135,7 @@ a {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    margin-bottom: 6rem;
+    margin-bottom: 6rem; 
 }
   
 .project-image {
@@ -140,5 +156,48 @@ a {
 }
   
 .project:hover {
-    transform: scale(1.02); 
+    transform: scale(1.02);
+    color: var(--para-clr-desaturated);
+}
+
+.btn-flex a:hover {
+    color: var(--para-clr-desaturated);
+}
+
+.contact-section {
+    /* border: 1px solid red; */
+    text-align: center;
+    background-color: var(--contact-clr);
+    color: var(--para-clr-desaturated);
+    width: 100%;
+    padding: 5rem 0;
+    border-radius: 100% 100% 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-section-header {
+    font-size: var(--biger-para);
+    margin-bottom: 1rem;
+}
+
+.contact-links {
+    color: var(--para-clr);
+    display: flex;
+}
+
+#profile-link {
+    color: var(--para-clr-desaturated);
+    padding: 1.5rem;
+    position: relative;
+    top: 0;
+    transition: all .2s ease-in-out;
+}
+
+#profile-link:hover {
+    transform: scale(1.09); 
+    top: -10px;
 }
